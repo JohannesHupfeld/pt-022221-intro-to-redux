@@ -30,7 +30,7 @@ const initialState = {
 
 // const actionObj = {type: "ADD_TO_CART", payload: {id: 1, name: "Candy Corn", price: 10}}
 
-export default function reducer(state = initialState, action){
+export default function reducer(state = initialState, action){ // when building redux start with my reducer before going to much into setting up map dispatch to props in my components
   switch (action.type) {
     case ADD_TO_CART:
       
@@ -44,3 +44,4 @@ export default function reducer(state = initialState, action){
       return state;
   }
 };
+ 
